@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Ingenium</title>
+    <style>
+        /* Restablecer el modelo de caja y asegurar que todos los elementos utilicen border-box */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            overflow-x: hidden; /* Prevenir el desplazamiento lateral */
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 20px;
+            padding: 35px;
+            justify-content: center;
+            /* Removemos el ancho fijo de las tarjetas para permitir el reajuste automático en el grid */
+        }
+        
+        .employee-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            background-image: linear-gradient(rgba(31, 46, 82, 0.8), rgba(31, 46, 82, 0.7)), url('img/back-header.png');
+            background-position: center; /* Centra la imagen de fondo en el div */
+            background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
+            background-repeat: no-repeat; 
+        }
+        
+        .employee-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .employee-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #eee;
+        }
+        
+        .employee-name {
+            font-size: 20px;
+            margin: 5px 0;
+            color: #EBC224;
+        }
+        
+        .employee-title {
+            font-size: 14px;
+            color: #EBC224;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="employee-card" onclick="location.href='vCards/Eloy.html';">
+            <img src="img/eloy-perfil.jpg" alt="Eloy García Parga" class="employee-photo"/>
+            <div class="employee-name"><b>Eloy García Parga</b></div>
+            <div class="employee-title">Desarrollo Web</div>
+        </div>
+
+        <div class="employee-card" onclick="location.href='vCards/Diego.html';">
+            <img src="img/diego-perfil.png" alt="Diego Carro Fernández" class="employee-photo"/>
+            <div class="employee-name"><b>Diego Carro Fernández</b></div>
+            <div class="employee-title">Ingeniero Senior</div>
+        </div>
+        
+        <div class="employee-card" onclick="location.href='vCards/Joy.html';">
+            <img src="img/joy-perfil.jpeg" alt="Joy Zhang Liqiong" class="employee-photo"/>
+            <div class="employee-name"><b>Joy Zhang Liqiong</b></div>
+            <div class="employee-title">Compra Internacional</div>
+        </div>
+        <!-- Repite los bloques .employee-card para otros empleados -->
+    </div>
+
+    <!-- Puedes agregar más scripts aquí si es necesario -->
+</body>
+</html>
