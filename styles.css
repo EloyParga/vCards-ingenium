@@ -1,13 +1,43 @@
 /*Colors*/
-.phone { background-color: #353434; } /* Rojo Teléfono */
-.email { background-color: #80063f; } /* Púrpura Email */
-.web { background-color: #192542; } /* Púrpura Email */
+.phone {
+    background-color: #353434;
+}
+
+/* Rojo Teléfono */
+.email {
+    background-color: #80063f;
+}
+
+/* Púrpura Email */
+.web {
+    background-color: #192542;
+}
+
+/* Color boton de contacto */
+.contact {
+    background-color: #6E6612;
+}
+
+.download {
+    background-color: #727272;
+}
+
+.contact:hover {
+    cursor: pointer;
+}
+
+.info {
+    cursor: pointer;
+    width: 35px;
+    /* Ajusta el ancho de la imagen */
+    height: auto;
+    /* Esto asegura que el tamaño de la imagen se ajuste proporcionalmente */
+    align-items: center;
+}
 
 
-
-
-
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,41 +53,49 @@ body, html {
 }
 
 .icono-compartir {
-    height: 24px; /* Ajusta la altura según necesites */
+    height: 24px;
+    /* Ajusta la altura según necesites */
     width: auto;
-    vertical-align: middle; /* Alinea el ícono con el texto */
+    vertical-align: middle;
+    /* Alinea el ícono con el texto */
     margin: -20px;
 }
 
-.p-icon-comp{
+.p-icon-comp {
     margin: 0px;
 }
 
 .card-header {
+
     background-color: #1f2e52;
     color: #ebc224;
     text-align: center;
     padding: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 5%;
     position: relative;
 
     background-image: linear-gradient(rgba(31, 46, 82, 0.8), rgba(31, 46, 82, 0.7)), url('img/back-header.png');
-    background-position: center; /* Centra la imagen de fondo en el div */
-    background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
-    background-repeat: no-repeat;
+    background-position: center;
+    /* Centra la imagen de fondo en el div */
+    background-size: cover;
+    /* Esto hará que la imagen de fondo cubra todo el div */
+    /* background-repeat: no-repeat; */
+
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 50% 100%, 0 calc(100% - 50px));
 
+
 }
+
 .consultant-name {
     font-size: 24px;
     margin: 10px;
 }
 
-.card-header h2{
+.card-header h2 {
     margin-top: 20px;
 }
 
-.card-header p{
+.card-header p {
     margin-top: -10px;
 }
 
@@ -70,14 +108,15 @@ body, html {
     border: 4px solid #ebc224;
     margin-top: 15px;
     margin-bottom: 15px;
-    display: block; /* Asegura que la imagen sea un bloque y por ende, centrada */
+    display: block;
+    /* Asegura que la imagen sea un bloque y por ende, centrada */
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
-}
 
+
+}
 
 .card-content {
     padding: 20px;
@@ -85,21 +124,36 @@ body, html {
 }
 
 .contact-buttons .button {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Clases adicionales por color de los íconos, si es necesario */
-.phone .fa-phone { color: #fff; }
-.email .fa-envelope { color: #fff; }
-.web .fa-globe { color: #fff; }
+.phone .fa-phone {
+    color: #fff;
+}
+
+.email .fa-envelope {
+    color: #fff;
+}
+
+.web .fa-globe {
+    color: #fff;
+}
+
+.phone .fa-address-book {
+    color: #fff;
+}
 
 /* Asegúrate de que los íconos no tengan bordes y sean del tamaño apropiado */
-.fa-phone, .fa-envelope, .fa-globe {
+.fa-phone,
+.fa-envelope,
+.fa-globe {
     border: none;
-    font-size: 1.2em; /* O el tamaño que prefieras */
+    font-size: 1.2em;
+    /* O el tamaño que prefieras */
 }
 
 .contact-buttons a.button {
@@ -120,55 +174,65 @@ body, html {
 
 .contact-buttons a.button i {
     position: absolute;
-    left: 80px; /* Ajusta la posición izquierda de los iconos */
+    left: 80px;
+    /* Ajusta la posición izquierda de los iconos */
     top: 50%;
     transform: translateY(-50%);
 }
 
 .phone {
-    background-color: #353434; /* Gris oscuro */
+    background-color: #353434;
+    /* Gris oscuro */
 }
 
 .phone i {
-    color: #4CAF50; /* Color del icono para teléfono */
+    color: #4CAF50;
+    /* Color del icono para teléfono */
 }
 
 .email {
-    background-color: #80063f; /* Púrpura */
+    background-color: #80063f;
+    /* Púrpura */
 }
 
 .email i {
-    color: #db7093; /* Color del icono para email */
+    color: #db7093;
+    /* Color del icono para email */
 }
 
 .web {
-    background-color: #192542; /* Azul */
+    background-color: #192542;
+    /* Azul */
 }
 
 .web i {
-    color: #1e90ff; /* Color del icono para web */
+    color: #1e90ff;
+    /* Color del icono para web */
 }
 
 
 
 img {
-    
+
     margin: 20px 0;
 }
 
 /* Estilos para la sección de servicios con Acordeón */
 
-.services-section{
+.services-section {
     padding: 20px;
 }
 
 .banner {
     background-color: #192542;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente (si quieres que también esté centrado verticalmente) */
-    height: 100px; /* Ajusta la altura según necesites */
-  }
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente (si quieres que también esté centrado verticalmente) */
+    height: 100px;
+    /* Ajusta la altura según necesites */
+}
 
 .accordion {
     background-color: #1f2e52;
@@ -180,11 +244,25 @@ img {
     text-align: left;
     outline: none;
     transition: 0.4s;
-    margin-top: 10px; /* Añade espaciado entre botones si es necesario */
+    margin-top: 10px;
+    /* Añade espaciado entre botones si es necesario */
 }
 
-.active, .accordion:hover {
-    background-color: #365087; /* Color más claro para el botón activo/hover */
+.active,
+.accordion:hover {
+    background-color: #365087;
+    /* Color más claro para el botón activo/hover */
+}
+
+.pop {
+    display: none;
+}
+
+.pop-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .panel {
@@ -219,19 +297,24 @@ img {
 }
 
 .qr-section .qr-link {
-    background-color: #fff; /* Fondo blanco para contraste */
-    padding: 10px; /* Espacio alrededor del QR */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #fff;
+    /* Fondo blanco para contraste */
+    padding: 10px;
+    /* Espacio alrededor del QR */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 .qr-code-image {
     width: 120px;
     height: 120px;
     transition: transform 0.5s ease;
-    cursor: pointer; /* Para indicar que es clickable */
+    cursor: pointer;
+    /* Para indicar que es clickable */
 }
-  
+
 .qr-code-image.expanded {
     transform: scale(2);
     -webkit-transform: scale(2);
@@ -253,7 +336,8 @@ img {
 }
 
 .sharing-section {
-    text-align: center; /* Centra el texto y los elementos de bloque */
+    text-align: center;
+    /* Centra el texto y los elementos de bloque */
     margin: 0 auto;
 }
 
@@ -264,17 +348,21 @@ img {
 }
 
 .social-buttons .social-button {
-    padding: 10px 15px; /* Espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
-    color: white; /* Color del texto */
-    font-size: 16px; /* Tamaño del texto */
+    padding: 10px 15px;
+    /* Espacio interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    color: white;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
 }
 
 .social-buttons {
     padding-bottom: 30px;
 }
 
-.social-buttons p{
+.social-buttons p {
     font-weight: bold;
     padding-top: 20px;
 }
@@ -285,7 +373,7 @@ img {
     padding-top: 15px;
 }
 
-.follow-buttons{
+.follow-buttons {
     padding-bottom: 15px;
 }
 
@@ -295,13 +383,15 @@ img {
     display: inline-block;
     margin: 5px;
     padding: 10px 15px;
-    border-radius: 20px; /* Bordes redondeados para los botones */
+    border-radius: 20px;
+    /* Bordes redondeados para los botones */
     color: white;
     font-size: 16px;
 }
 
 .social-button i {
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    margin-right: 8px;
+    /* Espacio entre el ícono y el texto */
 }
 
 .follow-button {
@@ -318,58 +408,92 @@ img {
     -o-border-radius: 10%;
 }
 
-.follow-buttons{
+.follow-buttons {
     background-color: #e0e0e0;
 
     .follow-button {
         display: inline-block;
         margin: 5px;
         padding: 10px;
-        border-radius: 50%; /* Íconos circulares */
+        border-radius: 50%;
+        /* Íconos circulares */
         color: white;
-        font-size: 20px; /* Tamaño del ícono */
+        font-size: 20px;
+        /* Tamaño del ícono */
 
-        i{
+        i {
             width: 30px;
             height: 30px;
-            line-height: 30px; /* Centra verticalmente el ícono */
+            line-height: 30px;
+            /* Centra verticalmente el ícono */
             text-align: center;
         }
     }
 
     /* Ajusta el tamaño y el estilo del ícono de Font Awesome */
-    
+
 }
 
-.social-button i{
+.social-button i {
     margin-right: 8px;
 }
 
 .qr-section p,
 .social-buttons p,
 .follow-buttons p {
-    margin: 10px 0; /* Espacio uniforme arriba y abajo */
-    color: #333; /* Color del texto */
+    margin: 10px 0;
+    /* Espacio uniforme arriba y abajo */
+    color: #333;
+    /* Color del texto */
 }
+
 .qr-section .qr-link,
 .social-buttons .social-button,
 .follow-buttons .follow-button {
-    display: inline-block; /* Coloca elementos uno al lado del otro */
-    margin: 10px; /* Espacio entre botones */
-    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: inline-block;
+    /* Coloca elementos uno al lado del otro */
+    margin: 10px;
+    /* Espacio entre botones */
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
 }
 
 /* Colores específicos para los botones de redes sociales */
-.social-button.email { background-color: #D44638; }
-.social-button.linkedin { background-color: #0077B5; }
-.social-button.whatsapp { background-color: #25D366; }
-.social-button.wechat {background-color: #4CAF50;}
+.social-button.email {
+    background-color: #D44638;
+}
 
-.follow-button.facebook { background-color: #3B5998; }
-.follow-button.twitter { background-color: #1DA1F2; }
-.follow-button.youtube { background-color: #FF0000; }
-.follow-button.instagram { background-color: #C13584; }
-.follow-button.linkedin { background-color: #0077B5; }
+.social-button.linkedin {
+    background-color: #0077B5;
+}
+
+.social-button.whatsapp {
+    background-color: #25D366;
+}
+
+.social-button.wechat {
+    background-color: #4CAF50;
+}
+
+.follow-button.facebook {
+    background-color: #3B5998;
+}
+
+.follow-button.twitter {
+    background-color: #1DA1F2;
+}
+
+.follow-button.youtube {
+    background-color: #FF0000;
+}
+
+.follow-button.instagram {
+    background-color: #C13584;
+}
+
+.follow-button.linkedin {
+    background-color: #0077B5;
+}
 
 
 /* @media only screen and (min-width: 600px) {
