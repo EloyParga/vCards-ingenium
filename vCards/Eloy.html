@@ -1,106 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- ... otras etiquetas ... -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="✨Eloy Parga - Ingenium SL✨" />
     <meta property="og:description" content="Front-end Developer" />
     <meta property="og:image" content="https://vcard.ingeniumsl.com/img/eloy-perfil.jpg" />
-        <!-- ... más etiquetas ... -->
-    
+    <!-- ... más etiquetas ... -->
+
     <title>vCard - Eloy Parga</title>
     <link rel="stylesheet" href="/styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
+
 <body>
     <div class="mobile-card">
-        <section class="card-header">
-            <h1 class="consultant-name">Eloy Parga</h1>
-            <img class="profile-img" src="/img/eloy-perfil.jpg" alt="Eloy Parga">
-            <h2 >Front-End Developer</h2>
-            <p>Departamento I+D</p>
-        </section>
-        <section class="card-content">
-            <div class="contact-buttons">
-                <a href="tel:+34684611671" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
-                <a href="mailto:eloy@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme por Email</a>
-                <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita nuestra WEB</a>
-            </div>
-        </section>
-        
-        <section class="services-section">
-            <h2>Datos Empresa </h2>
+            <section class="card-header">
+                <h1 class="consultant-name">Eloy Parga</h1>
+                <img class="profile-img" src="/img/eloy-perfil.jpg" alt="Eloy Parga">
+                <h2>Front-End Developer</h2>
+                <p>Departamento I+D</p>
+            </section>
+            <section class="card-content">
+                <div class="contact-buttons">
+                    <a href="tel:+34684611671" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
+                    <a href="mailto:eloy@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme
+                        por
+                        Email</a>
+                    <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita
+                        nuestra WEB</a>
+                    <a class="button contact" onclick="mostrarOcultar()"><i class="fa fa-address-book"></i>Guarda mi
+                        contacto</a>
+                    <div class="pop" id="aviso" onclick="event.stopPropagation();">
+                        <div onclick="event.stopPropagation();">
+                            <div class="pop-content" onclick="event.stopPropagation();">
+                                <!-- Detenemos la propagación del clic para que no se oculte cuando hacemos clic dentro del div -->
+                                <h2><i class="fa fa-info-circle"> </i> Instrucciones </i></h2>
+                                <p>En primer lugar piche para descargarlo</p>
+                                <p>Posteriormente tendra descargadio </p>
+                                <a href="EloyParga.vcf" download="EloyParga.vcf" type="text/vcard"
+                                    onclick="abrirContacto()" class="button download"><i class="fa fa-download"></i>
+                                    Descargar</a>
+                            </div>
+                        </div>
+                    </div>
 
-            
-            <div class="banner">
-                <a href="https://maps.app.goo.gl/Hd5ZYuz83Fc9XhfK7"><img src="/img/logo-Horizontal.svg" alt="banner Ingenium"></a>
-            </div>
-            <button class="accordion">Horarios</button>
-            <div class="panel">
-                <p> <b>Lunes a Jueves:</b>  9:00 a 18:00</p>
-                <p> <b>Viernes:</b> 9:00 a 15:00</p>
-                <p>Hora Madrid-España (GMT+1h)</p>
-            </div>
-            <button class="accordion">Contacto</button>
-            <div class="panel">
-                <p> <i class="fa fa-phone"></i> (+34) 985 118 859</p>
-                <p> <i class="fa fa-envelope"></i> ingenium@ingeniumsl.com</p>
-            </div>
-        </section>
+                </div>
+            </section>
+            <section class="services-section">
+                <h2>Datos Empresa </h2>
 
-        <section class="location-section">
-            <h2>Ubicación - Ingenium SL</h2>
-            <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.184948633849!2d-5.8282218993039425!3d43.42806695691378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368eafaebb658d%3A0xc0abf2b9a7f5eefd!2sIngenium%20Ingenier%C3%ADa%20y%20Dom%C3%B3tica%20S.L.!5e0!3m2!1ses!2ses!4v1711454389325!5m2!1ses!2ses"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-        </section>
 
-        <section class="sharing-section">
-            <div class="qr-section">
-                <h2>Compartir con otro dispositivo:</h2>
-                <a href="/img/eloy-qr-url.svg" class="qr-link">
-                    <img src="/img/eloy-qr-url.svg" alt="QR Code" class="qr-code-image"/>
-                    <p class="p-icon-comp"><img src="/img/icono-compartir.svg" alt="Icono Compartir" class="icono-compartir"/> </p>
-                </a>
-            </div>
-            <div class="social-buttons social-share-buttons">
-                <p>Compartir:</p>
+                <div class="banner">
+                    <a href="https://maps.app.goo.gl/Hd5ZYuz83Fc9XhfK7"><img src="/img/logo-Horizontal.svg"
+                            alt="banner Ingenium"></a>
+                </div>
+                <button class="accordion">Horarios</button>
+                <div class="panel">
+                    <p> <b>Lunes a Jueves:</b> 9:00 a 18:00</p>
+                    <p> <b>Viernes:</b> 9:00 a 15:00</p>
+                    <p>Hora Madrid-España (GMT+1h)</p>
+                </div>
+                <button class="accordion">Contacto</button>
+                <div class="panel">
+                    <p> <i class="fa fa-phone"></i> (+34) 985 118 859</p>
+                    <p> <i class="fa fa-envelope"></i> ingenium@ingeniumsl.com</p>
+                </div>
+            </section>
 
-                <a href="mailto:?subject=Consulta &body=https%3A%2F%2Fvcard.ingeniumsl.com%2FvCards%2FEloy.html" class="social-button email">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
+            <section class="location-section">
+                <h2>Ubicación - Ingenium SL</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.184948633849!2d-5.8282218993039425!3d43.42806695691378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368eafaebb658d%3A0xc0abf2b9a7f5eefd!2sIngenium%20Ingenier%C3%ADa%20y%20Dom%C3%B3tica%20S.L.!5e0!3m2!1ses!2ses!4v1711454389325!5m2!1ses!2ses"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </section>
+            <section class="sharing-section">
+                <div class="qr-section">
+                    <h2>Compartir con otro dispositivo:</h2>
+                    <a href="/img/eloy-qr-url.svg" class="qr-link">
+                        <img src="/img/eloy-qr-url.svg" alt="QR Code" class="qr-code-image" />
+                        <p class="p-icon-comp"><img src="/img/icono-compartir.svg" alt="Icono Compartir"
+                                class="icono-compartir" /> </p>
+                    </a>
+                </div>
+                <div class="social-buttons social-share-buttons">
+                    <p>Compartir:</p>
 
-                <a class="social-button linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvcard.ingeniumsl.com/vCards/Eloy.html&title=%E2%9C%A8Conectemos%E2%9C%A8&summary=Front-end%20Developer%20-%20Eloy%20Garc%C3%ADa%20Parga.">
-                    <i class="fab fa-linkedin-in"></i> LinkedIn
-                </a>
+                    <a href="mailto:?subject=Consulta &body=https%3A%2F%2Fvcard.ingeniumsl.com%2FvCards%2FEloy.html"
+                        class="social-button email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
 
-                <a href="whatsapp://send?text=Front-end%20Developer%20-%20Eloy%20García%20Parga.%20🔗%20https://vcard.ingeniumsl.com/vCards/Eloy.html" class="social-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a class="social-button linkedin"
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvcard.ingeniumsl.com/vCards/Eloy.html&title=%E2%9C%A8Conectemos%E2%9C%A8&summary=Front-end%20Developer%20-%20Eloy%20Garc%C3%ADa%20Parga.">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
 
-            </div>
-            
-            
-            <div class="follow-buttons">
-                <p>Síguenos en:</p>
-                <a href="https://facebook.com/ingeniumsl" class="follow-button facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@ingeniumsl" class="follow-button youtube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/ingenium.sl/" class="follow-button instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/ingeniumsl/" class="follow-button linkedin"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+                    <a href="whatsapp://send?text=Front-end%20Developer%20-%20Eloy%20García%20Parga.%20🔗%20https://vcard.ingeniumsl.com/vCards/Eloy.html"
+                        class="social-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 
-        </section>
+                </div>
+
+
+                <div class="follow-buttons">
+                    <p>Síguenos en:</p>
+                    <a href="https://facebook.com/ingeniumsl" class="follow-button facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@ingeniumsl" class="follow-button youtube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/ingenium.sl/" class="follow-button instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/ingeniumsl/" class="follow-button linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </section>
+
     </div>
 
     <script src="../scripts.js"></script>
 
+    <script>
+        document.getElementById('auth-google').onclick = function () {
+            window.location.href = '/auth/google';
+        };
+    </script>
+
 </body>
+
 </html>
