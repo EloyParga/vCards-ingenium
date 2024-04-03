@@ -2,6 +2,9 @@
 .phone { background-color: #353434; } /* Rojo Teléfono */
 .email { background-color: #80063f; } /* Púrpura Email */
 .web { background-color: #192542; } /* Púrpura Email */
+.contact { background-color: #6E6612;}
+.contact:hover {cursor: pointer;}
+.download {background-color: #727272;}
 
 
 
@@ -77,6 +80,18 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     
 }
+
+.pop {
+    display: none;
+}
+
+.pop-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 
 
 .card-content {
@@ -372,10 +387,3 @@ img {
 .follow-button.linkedin { background-color: #0077B5; }
 
 
-/* @media only screen and (min-width: 600px) {
-    .mobile-card {
-       display: none;
-    }
-
-}
-*/
