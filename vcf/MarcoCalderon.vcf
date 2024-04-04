@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Marco Calderón
+N:Calderón;Marco;;
+EMAIL;TYPE=PREF,INTERNET:mcalderon@ingeniumsl.com
+TEL;TYPE=WORK:+34647786281
+TITLE: Soporte Técnico
+ORG:ingenium SL
+ADR;TYPE=WORK:;;Parque Tecnológico de Asturias , Parcela 50;Lugones;Asturias;33428;España
+END:VCARD

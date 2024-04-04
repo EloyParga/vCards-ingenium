@@ -14,7 +14,7 @@
     <title>Joy Zhang - Ingenium SL</title>
     <link rel="stylesheet" href="/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -27,9 +27,25 @@
         </section>
         <section class="card-content">
             <div class="contact-buttons">
-                <a href="tel:+34634588525" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
+                <a href="tel:+34985118859" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
                 <a href="mailto:joy@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme por Email</a>
                 <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita nuestra WEB</a>
+                <a class="button contact" onclick="mostrarOcultar()"><i class="fa-solid fa-id-card"></i>Guarda contacto</a>
+                <div class="pop" id="aviso" onclick="event.stopPropagation();">
+                    <div onclick="event.stopPropagation();">
+                        <div class="pop-content" onclick="event.stopPropagation();">
+                            <h2><i class="fa fa-info-circle"> </i> Instrucciones </h2>
+                            <p><b>1.</b>Presionar el boton descargar</p>
+                            <p><b>2.</b>Ejecutar el archivo .vcf descargado </p>
+                            <p><b>3.</b>Guardar el contacto (Local / SIM / Google)</p>
+                            <h5>Si su movil es IOS le aparecerá directamente la tarjeta de contacto</h5>
+                            <a href="/vcf/EloyParga.vcf" download="EloyParga.vcf" type="text/vcard" onclick="abrirContacto()" class="button download">
+                                <i class="fa fa-download"></i>
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         

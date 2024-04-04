@@ -1,11 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Eloy Parga
-N:Parga;Eloy;;
-EMAIL;TYPE=PREF,INTERNET:eloy@ingeniumsl.com
-TEL;TYPE=CELL:+34684611671
+FN:Joy Zhang
+N:Zhang;Joy;;
+EMAIL;TYPE=PREF,INTERNET:joy@ingeniumsl.com
 TEL;TYPE=WORK:+34985118859
-TITLE:Front-end Developer
+TITLE: Compra Internacional
 ORG:ingenium SL
 ADR;TYPE=WORK:;;Parque Tecnológico de Asturias , Parcela 50;Lugones;Asturias;33428;España
 END:VCARD
