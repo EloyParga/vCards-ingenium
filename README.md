@@ -129,7 +129,7 @@ git clone "Enlace-de-tu-repositorio-forked"
 
 Este proyecto ha sido desarrollado por el equipo de desarrollo de la empresa IngeniumSL con los siguientes colaboradores: <br> <br>
 
-|<div style="text-align: center;"><a href="https://github.com/EloyParga"><img src="https://avatars.githubusercontent.com/u/99491519?v=4" style="width: 120; border-radius: 100px;"></div> | <div style="text-align: center;"><a href="https://github.com/pelayogp"><img src="https://avatars.githubusercontent.com/u/114652676?s=96&v=4" style="width: 120; border-radius: 100px;"></a></div> |
+|<div style="text-align: center;"><a href="https://github.com/EloyParga"><img src="https://avatars.githubusercontent.com/u/99491519?v=4" style="width: 120px; border-radius: 100px;"></a></div> | <div style="text-align: center;"><a href="https://github.com/pelayogp"><img src="https://avatars.githubusercontent.com/u/114652676?s=96&v=4" style="width: 120px; border-radius: 100px;"></a></div> |
 | - | - |
 
 <p align="right">(<a href="#">volver arriba</a>)</p>
