@@ -392,4 +392,11 @@ img {
 .follow-button.instagram { background-color: #C13584; }
 .follow-button.linkedin { background-color: #0077B5; }
 
+.footer-content {
+    text-align: center;
+}
+
+.footer-content .copyright {
+    margin-top: 20px;
+}
 
