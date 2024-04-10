@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ... otras etiquetas ... -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="✨José Manuel Macías - Ingenium SL✨" />
+    <meta property="og:description" content="Responsable Comercial Zona centro - José Manuel Macías Nuñez" />
+    <meta property="og:image" content="https://vcard.ingeniumsl.com/img/josemanuel-perfil.jpeg" />
+        <!-- ... más etiquetas ... -->
+    
+    <title>José Manuel Macías - Ingenium SL</title>
+
+    <link rel="icon" href="/img/icon-web.png" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="mobile-card">
+        <section class="card-header">
+            <h1 class="consultant-name">José Manuel Macías</h1>
+            <img class="profile-img" src="/img/josemanuel-perfil.jpeg" alt="José Manuel Macías">
+            <h2 >Responsable Zona centro </h2>
+            <p>Departamento Comercial</p>
+        </section>
+        <section class="card-content">
+            <div class="contact-buttons">
+                <a href="tel:+34624082781" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
+                <a href="mailto:jmmacias@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme por Email</a>
+                <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita nuestra WEB</a>
+                <a class="button contact" onclick="mostrarOcultar()"><i class="fa-solid fa-id-card"></i>Guarda contacto</a>
+                <div class="pop" id="aviso" onclick="event.stopPropagation();">
+                    <div onclick="event.stopPropagation();">
+                        <div class="pop-content" onclick="event.stopPropagation();">
+                            <h2><i class="fa fa-info-circle"> </i> Instrucciones </h2>
+                            <p><b>1.</b>Presionar el boton descargar</p>
+                            <p><b>2.</b>Ejecutar el archivo .vcf descargado </p>
+                            <p><b>3.</b>Guardar el contacto (Local / SIM / Google)</p>
+                            <h5>Si su movil es IOS le aparecerá directamente la tarjeta de contacto</h5>
+                            <a href="/vcf/JoseManuel.vcf" download="JoseManuel.vcf" type="text/vcard" onclick="abrirContacto()" class="button download">
+                                <i class="fa fa-download"></i>
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services-section">
+            <h2>Datos Empresa </h2>
+
+            
+            <div class="banner">
+                <a href="https://www.google.com/maps/place/Ingenium+Ingenier%C3%ADa+y+Dom%C3%B3tica+S.L./@43.4201668,-5.8233958,18z/data=!4m6!3m5!1s0xd368eafaebb658d:0xc0abf2b9a7f5eefd!8m2!3d43.42028!4d-5.822576!16s%2Fg%2F11xr2g4xx?entry=ttu"><img src="/img/logo-Horizontal.svg" alt="banner Ingenium"></a>
+            </div>
+            <button class="accordion">Horarios</button>
+            <div class="panel">
+                <p> <b>Lunes a Jueves:</b>  9:00 a 18:00</p>
+                <p> <b>Viernes:</b> 9:00 a 15:00</p>
+                <p>Hora Madrid-España (GMT+1h)</p>
+            </div>
+            <button class="accordion">Contacto</button>
+            <div class="panel">
+                <p> <i class="fa fa-phone"></i> (+34) 985 118 859</p>
+                <p> <i class="fa fa-envelope"></i> ingenium@ingeniumsl.com</p>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <h2>Ubicación - Ingenium SL</h2>
+            <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.184948633849!2d-5.8282218993039425!3d43.42806695691378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368eafaebb658d%3A0xc0abf2b9a7f5eefd!2sIngenium%20Ingenier%C3%ADa%20y%20Dom%C3%B3tica%20S.L.!5e0!3m2!1ses!2ses!4v1711454389325!5m2!1ses!2ses"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="sharing-section">
+            <div class="qr-section">
+                <h2>Compartir con otro dispositivo:</h2>
+                <a href="/img/Qr/josemanuel-qr-url.svg" class="qr-link">
+                    <img src="/img/Qr/josemanuel-qr-url.svg" alt="QR Code" class="qr-code-image"/>
+                    <p class="p-icon-comp"><img src="/img/icono-compartir.svg" alt="Icono Compartir" class="icono-compartir"/> </p>
+                </a>
+            </div>
+            <div class="social-buttons social-share-buttons">
+                <p>Compartir:</p>
+ 
+                <a href="mailto:?subject=Consulta &body=https%3A%2F%2Fvcard.ingeniumsl.com%2FvCards%2FJoseManuel.html" class="social-button email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                                
+                <a class="social-button linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvcard.ingeniumsl.com/vCards/JoseManuel.html&title=%E2%9C%A8Conectemos%E2%9C%A8&summary=Responsable%20Comercial%20Zona%20Centro%20-%20Jose%20Manuel%20Macías%C3%ADa%20Nuñez.">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+
+                <a href="whatsapp://send?text=Responsable%20Comercial%20Zona%20Centro%20-%20Jose%20Manuel%20Macías%C3%ADa%20Nuñez.%20🔗%20https://vcard.ingeniumsl.com/vCards/JoseManuel.html" class="social-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            
+            
+            <div class="follow-buttons">
+                <p>Síguenos en:</p>
+                <a href="https://facebook.com/ingeniumsl" class="follow-button facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@ingeniumsl" class="follow-button youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ingenium.sl/" class="follow-button instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ingeniumsl/" class="follow-button linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="../scripts.js"></script>
+
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="copyright">
+            <p>&copy; 2024 Ingenium SL. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</html>
