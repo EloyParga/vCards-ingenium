@@ -25,6 +25,21 @@ body, html {
     color: #333;
 }
 
+#language-selector {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#language-selector button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 .icono-compartir {
     height: 24px; /* Ajusta la altura según necesites */
     width: auto;

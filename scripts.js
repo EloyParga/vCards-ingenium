@@ -76,3 +76,23 @@ document.getElementById('aviso').addEventListener('click', function (event) {
 
 
 
+// Esta variable almacena el idioma actual, supongamos que empezamos con español.
+var idiomaActual = 'es';
+
+function cambiarIdioma() {
+    // Alternar el idioma actual entre 'en' (inglés) y 'es' (español)
+    idiomaActual = (idiomaActual === 'es') ? 'en' : 'es';
+
+    // Seleccionar todos los elementos que tienen atributos de traducción.
+    var elementos = document.querySelectorAll('[data-es], [data-en]');
+
+    // Actualizar el texto de cada elemento según el idioma actual.
+    elementos.forEach(function(elemento) {
+        elemento.textContent = elemento.getAttribute('data-' + idiomaActual);
+    });
+}
+
+
+
+
+

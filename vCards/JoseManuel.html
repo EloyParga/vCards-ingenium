@@ -24,14 +24,18 @@
 <body>
     <div class="mobile-card">
         <section class="card-header">
+            <div id="language-selector" style="position: absolute; top: 20px; right: 20px;">
+                <button onclick="cambiarIdioma()">Cambiar Idioma</button>
+            </div>
+            
             <h1 class="consultant-name">José Manuel Macías</h1>
             <img class="profile-img" src="/img/josemanuel-perfil.jpeg" alt="José Manuel Macías">
-            <h2 >Responsable Zona centro </h2>
-            <p>Departamento Comercial</p>
+            <h2 data-es="Responsable Zona centro" data-en="Mid Zone resort">Responsable Zona centro</h2>
+            <p data-es="Departamento Comercial" data-en="Depaartment Comercuial">Departamento Comercial</p>
         </section>
         <section class="card-content">
             <div class="contact-buttons">
-                <a href="tel:+34624082781" class="button phone"><i class="fa fa-phone"></i> Llama por Teléfono</a>
+                <a href="tel:+34624082781" class="button phone" data-es="Llama por Télefono"  data-en="Phone Call" ><i class="fa fa-phone"></i> Llama por Teléfono</a>
                 <a href="mailto:jmmacias@ingeniumsl.com" class="button email"><i class="fa fa-envelope"></i> Escríbeme por Email</a>
                 <a href="https://web.ingeniumsl.com/website/" class="button web"><i class="fa fa-globe"></i> Visita nuestra WEB</a>
                 <a class="button contact" onclick="mostrarOcultar()"><i class="fa-solid fa-id-card"></i>Guarda contacto</a>
