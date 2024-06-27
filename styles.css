@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #1C1F2B;
+
+    --green-comelit: #00BC70;
+
+    --gray-comelit: #D8DFE1;
+
+    --white:#ffffff;
+    --black:#000000;
+
+  }
+
 /*Colors*/
 .phone { background-color: #2A5032; } /* Rojo Teléfono */
 .email { background-color: #80063f; } /* Púrpura Email */
@@ -14,7 +26,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e0e0e0;
+    background-color: var(--primary-color);
 }
 
 .mobile-card {
@@ -53,13 +65,13 @@ body, html {
 
 .card-header {
     background-color: #1f2e52;
-    color: #ebc224;
+    color: #fff ;
     text-align: center;
     padding: 40px;
     margin-bottom: 5px;
     position: relative;
 
-    background-image: linear-gradient(rgba(31, 46, 82, 0.8), rgba(31, 46, 82, 0.7)), url('img/back-header.png');
+    background-image: linear-gradient(rgba(28, 31, 53, 0.8), rgba(0, 188, 112, 0.4)), url('img/back-header.png');
     background-position: center; /* Centra la imagen de fondo en el div */
     background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
     background-repeat: no-repeat;
@@ -85,7 +97,7 @@ body, html {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid #ebc224;
+    border: 4px solid var(--green-comelit);
     margin-top: 15px;
     margin-bottom: 15px;
     display: block; /* Asegura que la imagen sea un bloque y por ende, centrada */
@@ -188,7 +200,7 @@ body, html {
 
 
 img {
-    
+    width: 200px;
     margin: 20px 0;
 }
 
@@ -199,7 +211,7 @@ img {
 }
 
 .banner {
-    background-color: #192542;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente (si quieres que también esté centrado verticalmente) */
@@ -207,7 +219,7 @@ img {
   }
 
 .accordion {
-    background-color: #1f2e52;
+    background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
     padding: 18px;
@@ -220,7 +232,8 @@ img {
 }
 
 .active, .accordion:hover {
-    background-color: #365087; /* Color más claro para el botón activo/hover */
+    background-color: var(--green-comelit);
+    color: var(--primary-color); /* Color más claro para el botón activo/hover */
 }
 
 .panel {
@@ -355,7 +368,9 @@ img {
 }
 
 .follow-buttons{
-    background-color: #e0e0e0;
+    background-color: var(--primary-color);
+
+    
 
     .follow-button {
         display: inline-block;
@@ -385,7 +400,7 @@ img {
 .social-buttons p,
 .follow-buttons p {
     margin: 10px 0; /* Espacio uniforme arriba y abajo */
-    color: #333; /* Color del texto */
+    color: white; /* Color del texto */
 }
 .qr-section .qr-link,
 .social-buttons .social-button,
@@ -408,10 +423,12 @@ img {
 .follow-button.linkedin { background-color: #0077B5; }
 
 .footer-content {
+    background-color: var(--primary-color);
     text-align: center;
 }
 
 .footer-content .copyright {
+    color: var(--white);
     margin-top: 20px;
 }
 
