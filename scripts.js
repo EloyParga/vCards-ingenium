@@ -79,17 +79,47 @@ document.getElementById('aviso').addEventListener('click', function (event) {
 // Esta variable almacena el idioma actual, supongamos que empezamos con español.
 var idiomaActual = 'es';
 
-function cambiarIdioma() {
-    // Alternar el idioma actual entre 'en' (inglés) y 'es' (español)
-    idiomaActual = (idiomaActual === 'es') ? 'en' : 'es';
 
-    // Seleccionar todos los elementos que tienen atributos de traducción.
-    var elementos = document.querySelectorAll('[data-es], [data-en]');
 
-    // Actualizar el texto de cada elemento según el idioma actual.
-    elementos.forEach(function(elemento) {
-        elemento.textContent = elemento.getAttribute('data-' + idiomaActual);
-    });
+function toggleLanguage() {
+  var img = document.getElementById('currentFlag');
+  if (img.src.includes('/img/flags/espana.png')) {
+      img.src = '/img/flags/usa.png'; // Asegúrate de tener una imagen llamada 'usa.png'
+      img.alt = 'English';
+  } else {
+      img.src = '/img/flags/espana.png';
+      img.alt = 'Español';
+  }
+
+
+     // Alternar el idioma actual entre 'en' (inglés) y 'es' (español)
+     idiomaActual = (idiomaActual === 'es') ? 'en' : 'es';
+
+     // Seleccionar todos los elementos que tienen atributos de traducción.
+     var elementos = document.querySelectorAll('[data-es], [data-en]');
+ 
+     // Actualizar el texto de cada elemento según el idioma actual.
+     elementos.forEach(function(elemento) {
+         var icon = elemento.querySelector('i'); // Selecciona el icono dentro del elemento
+         var bold = elemento.querySelector('b'); // Selecciona el texto en negrita dentro del elemento
+         var text = elemento.getAttribute('data-' + idiomaActual); // Obtiene el texto en el idioma actual
+ 
+         if (bold) {
+             // Actualizar el texto del elemento en negrita según el idioma actual
+             bold.textContent = bold.getAttribute('data-' + idiomaActual);
+         }
+ 
+         if (icon) {
+             // Si el icono existe, actualizar el texto dejando el icono intacto
+             elemento.innerHTML = icon.outerHTML + ' ' + text;
+         } else if (bold) {
+             // Si hay texto en negrita, actualizar el texto del párrafo dejando el número intacto
+             elemento.innerHTML = bold.outerHTML + ' ' + text;
+         } else {
+             // Si no hay icono ni texto en negrita, simplemente actualizar el texto
+             elemento.textContent = text;
+         }
+     });
 }
 
 

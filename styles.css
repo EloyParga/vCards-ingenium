@@ -107,6 +107,20 @@ body, html {
     object-fit: cover; /* Añade esta línea para ajustar la imagen correctamente */
 }
 
+.language-btn {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor en forma de mano al pasar el ratón */
+    padding: 5px; /* Espaciado interno mínimo */
+    outline: none; /* Eliminar el contorno que aparece al hacer clic */
+}
+
+.flag {
+    width: 30px; /* Ancho fijo para la bandera */
+    transition: opacity 0.3s; /* Suavizar el cambio de opacidad */
+}
+
+
 .pop {
     display: none;
 }
