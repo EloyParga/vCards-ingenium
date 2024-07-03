@@ -26,21 +26,35 @@
             box-sizing: border-box;
         }
         
-        body, html {
+        body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            overflow-x: hidden; /* Prevenir el desplazamiento lateral */
+            padding: 20px;
         }
         
         .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 35px;
             justify-content: center;
             /* Removemos el ancho fijo de las tarjetas para permitir el reajuste automático en el grid */
+        }
+
+        h2 {
+            background-color: var(--green-comelit);
+            color: var(--primary-color);
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .department {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
         }
         
         .employee-card {
@@ -48,11 +62,12 @@
             border: 2px solid #000000;
             border-radius: 8px;
             padding: 20px;
+            width: 270px;
+            height: 220px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             cursor: pointer;
             transition: transform 0.3s ease;
-
             background-image: linear-gradient(rgba(31, 46, 82, 0.8), rgba(31, 46, 82, 0.7)), url('img/back-header.png');
             background-position: center; /* Centra la imagen de fondo en el div */
             background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
@@ -60,16 +75,16 @@
         }
         
         .employee-card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.05);
         }
         
         .employee-photo {
+            border-radius: 50%;
             width: 80px;
             height: 80px;
             object-fit: cover;
-            border-radius: 50%;
             margin-bottom: 10px;
-            border: 3px solid #00BC70;
+            border: 3px solid var(--green-comelit);
         }
         
         .employee-name {
@@ -79,6 +94,7 @@
         }
         
         .employee-title {
+            font-weight: 600;
             font-size: 14px;
             color: #00BC70;
         }
@@ -88,102 +104,103 @@
     <div class="container">
 
         <h2>I+D</h2>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/Eloy.html';">
+                <img src="img/eloy-perfil.jpg" alt="Eloy García Parga" class="employee-photo"/>
+                <div class="employee-name">Eloy García Parga</div>
+                <div class="employee-title">Desarrollo Web</div>
+            </div>
 
-        <div class="employee-card" onclick="location.href='vCards/Eloy.html';">
-            <img src="img/eloy-perfil.jpg" alt="Eloy García Parga" class="employee-photo"/>
-            <div class="employee-name"><b>Eloy García Parga</b></div>
-            <div class="employee-title">Desarrollo Web</div>
-        </div>
-
-        <div class="employee-card" onclick="location.href='vCards/Diego.html';">
-            <img src="img/diego-perfil.png" alt="Diego Carro Fernández" class="employee-photo"/>
-            <div class="employee-name"><b>Diego Carro Fernández</b></div>
-            <div class="employee-title">Ingeniero Senior</div>
+            <div class="employee-card" onclick="location.href='vCards/Diego.html';">
+                <img src="img/diego-perfil.png" alt="Diego Carro Fernández" class="employee-photo"/>
+                <div class="employee-name">Diego Carro Fernández</div>
+                <div class="employee-title">Ingeniero Senior</div>
+            </div>
         </div>
 
         <h2>Dpt. Exportación</h2>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/Miguel.html';">
+                <img src="img/miguel-perfil.jpeg" alt="Miguel Sánchez Gutiérrez" class="employee-photo"/>
+                <div class="employee-name">Miguel Sánchez Gutiérrez</div>
+                <div class="employee-title">Director de Exportación</div>
+            </div>
 
-        <div class="employee-card" onclick="location.href='vCards/Miguel.html';">
-            <img src="img/miguel-perfil.jpeg" alt="Miguel Sánchez Gutiérrez" class="employee-photo"/>
-            <div class="employee-name"><b>Miguel Sánchez Gutiérrez</b></div>
-            <div class="employee-title">Director de Exportación</div>
-        </div>
-
-        <div class="employee-card" onclick="location.href='vCards/Andres.html';">
-            <img style="object-position: center 30%;" src="img/andres-perfil.jpeg" alt="Andrés Ornia Fernández" class="employee-photo"/>
-            <div class="employee-name"><b>Andrés Ornia Fernández</b></div>
-            <div class="employee-title">Gerente de Área </div>
+            <div class="employee-card" onclick="location.href='vCards/Andres.html';">
+                <img style="object-position: center 30%;" src="img/andres-perfil.jpeg" alt="Andrés Ornia Fernández" class="employee-photo"/>
+                <div class="employee-name">Andrés Ornia Fernández</div>
+                <div class="employee-title">Gerente de Área</div>
+            </div>
         </div>
 
         <h2>Ventas</h2>
-
-        <div class="employee-card" onclick="location.href='vCards/Elena.html';">
-            <img src="img/elena-perfil.jpeg" alt="Elena Georgiana Dumitrescu" class="employee-photo"/>
-            <div class="employee-name"><b>Elena Georgiana Dumitrescu</b></div>
-            <div class="employee-title">Soporte de Ventas</div>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/Elena.html';">
+                <img src="img/elena-perfil.jpeg" alt="Elena Georgiana Dumitrescu" class="employee-photo"/>
+                <div class="employee-name">Elena Georgiana Dumitrescu</div>
+                <div class="employee-title">Soporte de Ventas</div>
+            </div>
         </div>
         
         <h2>Compras</h2>
-
-        <div class="employee-card" onclick="location.href='vCards/Joy.html';">
-            <img src="img/joy-perfil.jpeg" alt="Joy Zhang Liqiong" class="employee-photo"/>
-            <div class="employee-name"><b>Joy Zhang Liqiong</b></div>
-            <div class="employee-title">Compra Internacional</div>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/Joy.html';">
+                <img src="img/joy-perfil.jpeg" alt="Joy Zhang Liqiong" class="employee-photo"/>
+                <div class="employee-name">Joy Zhang Liqiong</div>
+                <div class="employee-title">Compra Internacional</div>
+            </div>
         </div>
 
         <h2>Dpt. Técnico</h2>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/AbelMiranda.html';">
+                <img src="img/abel-perfil.jpeg" alt="Abel Fernandez Miranda" class="employee-photo"/>
+                <div class="employee-name">Abel Fernandez Miranda</div>
+                <div class="employee-title">Jefe Soporte Técnico</div>
+            </div>
 
-        <div class="employee-card" onclick="location.href='vCards/AbelMiranda.html';">
-            <img src="img/abel-perfil.jpeg" alt="Abel Fernandez Miranda" class="employee-photo"/>
-            <div class="employee-name"><b>Abel Fernandez Miranda</b></div>
-            <div class="employee-title">Jefe Soporte Técnico</div>
-        </div>
+            <div class="employee-card" onclick="location.href='vCards/MarcoCalderon.html';">
+                <img src="img/marco-perfil.jpeg" alt="Marco Calderón Gonzalez" class="employee-photo"/>
+                <div class="employee-name">Marco Calderón Gonzalez</div>
+                <div class="employee-title">Soporte Técnico</div>
+            </div>
 
-
-        <div class="employee-card" onclick="location.href='vCards/MarcoCalderon.html';">
-            <img src="img/marco-perfil.jpeg" alt="Marco Calderón Gonzalez" class="employee-photo"/>
-            <div class="employee-name"><b>Marco Calderón Gonzalez</b></div>
-            <div class="employee-title">Soporte Técnico</div>
-        </div>
-
-        <div class="employee-card" onclick="location.href='vCards/AngelOrdieres.html';">
-            <img src="img/angel-perfil.jpeg" alt="Angel Ordieres Delicado" class="employee-photo"/>
-            <div class="employee-name"><b>Angel Ordieres Delicado</b></div>
-            <div class="employee-title">Soporte Técnico</div>
+            <div class="employee-card" onclick="location.href='vCards/AngelOrdieres.html';">
+                <img src="img/angel-perfil.jpeg" alt="Angel Ordieres Delicado" class="employee-photo"/>
+                <div class="employee-name">Angel Ordieres Delicado</div>
+                <div class="employee-title">Soporte Técnico</div>
+            </div>
         </div>
 
         <h2>Dpt. Comercial</h2>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/JoseManuel.html';">
+                <img src="img/josemanuel-perfil.jpeg" alt="José Manuel Macías" class="employee-photo"/>
+                <div class="employee-name">José Manuel Macías</div>
+                <div class="employee-title">Responsable Zona Centro</div>
+            </div>
 
-        <div class="employee-card" onclick="location.href='vCards/JoseManuel.html';">
-            <img src="img/josemanuel-perfil.jpeg" alt="José Manuel Macías" class="employee-photo"/>
-            <div class="employee-name"><b>José Manuel Macías</b></div>
-            <div class="employee-title">Responsable Zona Centro</div>
-        </div>
-
-        <div class="employee-card" onclick="location.href='vCards/Valentin.html';">
-            <img src="img/valentin-perfil.jpg" alt="Valentín Sánchez" class="employee-photo"/>
-            <div class="employee-name"><b>Valentín Sánchez</b></div>
-            <div class="employee-title">Ingeniero Industrial</div>
+            <div class="employee-card" onclick="location.href='vCards/Valentin.html';">
+                <img src="img/valentin-perfil.jpg" alt="Valentín Sánchez" class="employee-photo"/>
+                <div class="employee-name">Valentín Sánchez</div>
+                <div class="employee-title">Ingeniero Industrial</div>
+            </div>
         </div>
 
         <h2>Dpt. Marketing</h2>
+        <div class="department">
+            <div class="employee-card" onclick="location.href='vCards/Sandra.html';">
+                <img src="img/sandra-perfil.jpg" alt="Sandra Nau" class="employee-photo"/>
+                <div class="employee-name">Sandra Nau</div>
+                <div class="employee-title">Marketing Specialist</div>
+            </div>
 
-        <div class="employee-card" onclick="location.href='vCards/Sandra.html';">
-            <img src="img/sandra-perfil.jpg" alt="Sandra Nau" class="employee-photo"/>
-            <div class="employee-name"><b>Sandra Nau</b></div>
-            <div class="employee-title">Marketing Specialist</div>
+            <div class="employee-card" onclick="location.href='vCards/Lucas.html';">
+                <img src="img/lucas-perfil.jpg" alt="Lucas Suárez" class="employee-photo"/>
+                <div class="employee-name">Lucas Suárez</div>
+                <div class="employee-title">Marketing Specialist</div>
+            </div>
         </div>
-
-        <div class="employee-card" onclick="location.href='vCards/Lucas.html';">
-            <img src="img/lucas-perfil.jpg" alt="Lucas Suárez" class="employee-photo"/>
-            <div class="employee-name"><b>Lucas Suárez</b></div>
-            <div class="employee-title">Marketing Specialist</div>
-        </div>
-
-
-        <!-- Repite los bloques .employee-card para otros empleados -->
     </div>
-
-    <!-- Puedes agregar más scripts aquí si es necesario -->
 </body>
 </html>
